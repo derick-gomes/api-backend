@@ -3,11 +3,10 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { ProductEntity } from './entities/products.entity';
-import { CreateProductDto } from './dto/create-product.dto';
-import { UpdateProductDto } from './dto/update-product.dto';
-import { PaginationResponseDto } from '../common/dto/pagination-response.dto';
-
+import { ProductEntity } from './entities/product.entity';
+import { CreateProductDto } from './dto/create-products.dto';
+import { UpdateProductDto } from './dto/update-products.dto';
+import { PaginationResponseDto } from 'src/common/enums/dto/pagination-response.dto'; // Caminho correto para o DTO de paginação
 // Defina uma interface para as opções de paginação
 interface FindAllOptions {
   page: number;

@@ -1,7 +1,7 @@
 // src/users/entities/user.entity.ts
 import { ProductEntity } from '../../products/entities/product.entity';
 import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm';
-import { Role } from '../../common/enums/role.enum';
+import { Role } from '../../common/enums/role.enums';
 
 @Entity({ name: 'users' })
 export class UserEntity {
@@ -17,7 +17,7 @@ export class UserEntity {
   @Column({
     type: 'enum',
     enum: Role,
-    default: Role.User, // Todo novo usuário será 'user' por padrão
+    default: Role.USER, // Todo novo usuário será 'user' por padrão
   })
   role: Role;
 

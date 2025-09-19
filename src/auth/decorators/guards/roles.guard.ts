@@ -3,7 +3,8 @@
 import { Injectable, CanActivate, ExecutionContext } from '@nestjs/common';
 import { Reflector } from '@nestjs/core';
 import { ROLES_KEY } from '../roles.decorator'; // Corrigido o caminho do import
-import { Role } from '../../../common/enums/role.enum'; // Corrigido o caminho do import
+// Update the path below to the correct location of role.enum.ts
+import { Role } from '../../../common/enums/role.enums'; // Corrigido o caminho do import
 
 @Injectable()
 export class RolesGuard implements CanActivate {

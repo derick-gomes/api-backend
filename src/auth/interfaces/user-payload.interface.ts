@@ -1,4 +1,4 @@
-import { Role } from "src/common/enums/role.enum";
+import { Role } from "src/common/enums/role.enums";
 
 export interface UserPayload {
   userId: number;
